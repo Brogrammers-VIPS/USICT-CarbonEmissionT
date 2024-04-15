@@ -18,11 +18,13 @@ Offers options to support verified carbon offset projects that compensate for th
 
 ## How It Work
 1.User Profile: Users create an account and provide information about their lifestyle to set a baseline for their emissions.
+
 2.Tracking: The app uses users input of starting and end point of distance to track travel and estimate emissions in real-time, with data encryption to ensure privacy.
+
 3.Insights: Users receive insights into their carbon footprint, including a breakdown of emissions from different activities.
 Offsetting: At the end of each month, users can choose to offset their emissions by funding certified environmental projects.
-Benefits
-4.Awareness: Increases awareness of one's impact on the environment.
+### Benefits
+1.Awareness: Increases awareness of one's impact on the environment.
 Actionable Data: Provides data-driven insights to make informed decisions about reducing emissions.
-5.Positive Impact: Encourages a sustainable lifestyle and supports global efforts to combat climate change.
+2.Positive Impact: Encourages a sustainable lifestyle and supports global efforts to combat climate change.
 Such a tracker would be a valuable asset for anyone looking to understand and reduce their environmental impact.
