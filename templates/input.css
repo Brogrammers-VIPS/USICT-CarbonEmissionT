@@ -55,7 +55,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: #455A64;
-  background-color: #7E57C2;
+  background-color: #d7f1ed;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeMd);
   line-height: var(--lineHeightMd);
@@ -97,12 +97,12 @@ body {
 }
 
 .Input-text::placeholder {
-  color: #B0BEC5;
+  color: #0a2e40;
 }
 
 .Input-text:focus {
   outline: none;
-  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary700);
 }
 
 .Input-label {
