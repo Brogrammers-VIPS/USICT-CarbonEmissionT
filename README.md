@@ -1,19 +1,19 @@
-### Carbon Emission Tracker
+# Carbon Emission Tracker
 
 
 The Carbon Emission Tracker is a tool designed to help individuals measure, manage, and reduce their carbon emissions. It combines user input to calculate CO2 emissions, set personalized reduction targets, provide sustainability tips, and offer options to offset emissions through verified environmental projects.
 
-### Features
-# 1. Emissions Calculation
+# Features
+## 1. Emissions Calculation
 Automatically calculates CO2 emissions based on transportation modes, travel frequency, and dietary choices using GPS tracking and user input.
 
-# 2. Personalized Targets
+## 2. Personalized Targets
 Sets monthly emission reduction targets aligned with global goals to limit warming to 1.5 degrees Celsius.
 
-# 3. Sustainability Tips
+## 3. Sustainability Tips
 Provides practical advice on reducing carbon footprints through lifestyle changes like less meat consumption and more sustainable travel options.
 
-# 4. Offset Projects
+## 4. Offset Projects
 Offers options to support verified carbon offset projects that compensate for the user's emissions.
 
 ## How It Work
