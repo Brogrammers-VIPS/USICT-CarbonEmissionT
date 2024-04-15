@@ -1,10 +1,11 @@
+<form method="post">
 <div class="row">
     <p>ENTER DETAILS.</p>
   </div>
   <div class="row">
     <span>
         <label>Car Name</label>
-      <select id="Comp_name">
+      <select id="Comp_name" name="Comp_name">
         <option value="acura">Acura</option>
         <option value="alfa-romeo">Alfa Romeo</option>
         <option value="aston-martin">Aston Martin</option>
@@ -50,7 +51,7 @@
     </select></span>
     <span>
         <label>vehicle class</label>
-        <select id="vehicleTypes">
+        <select id="vehicleTypes" name="v_class">
           <option value="compact">Compact</option>
           <option value="suv-small">SUV - Small</option>
           <option value="mid-size">Mid-Size</option>
@@ -71,7 +72,7 @@
     </span>
     <span>
         <label>engine size</label>
-        <select id="engineSizes">
+        <select id="engineSizes" name="eng_size">
           <option value="0.9">0.9</option>
           <option value="1.0">1.0</option>
           <option value="1.2">1.2</option>
@@ -129,7 +130,7 @@
   <div class="row">
     <span>
         <label for="cyl">Cylinders:</label>
-        <select id="cylindernum">
+        <select id="cylindernum" name="cyl">
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
@@ -143,7 +144,7 @@
     </span>
     <span>
         <label for="trans">Transmission:</label>
-        <select id="Comp_name" name="Company Name">
+        <select id="Comp_name" name="trans">
           <option value="AS5">AS5</option>
           <option value="M6">M6</option>
           <option value="AV7">AV7</option>
@@ -162,7 +163,7 @@
     </span>
     <span>
         <label for="f_type">Fuel Type:</label>
-        <select id="f_type" name="Fuel Type">
+        <select id="f_type" name="f_type">
           <option value="Z">Z</option>
           <option value="D">D</option>
           <option value="X">X</option>
@@ -178,24 +179,30 @@
     </span>
     <span>
       <label for="city">highway fuel comsp:</label>
-      <input type="text" id="highway" name="highway">
+      <input type="text" id="highway" name="hwy">
     </span>
     <span>
         <label for="city">combine fuel comsp(l/100km):</label>
-        <input type="text" id="combine" name="combine">
+        <input type="text" id="combine" name="comb">
     </span>
   </div>
   <div class="row">
     <span>
         <label for="city">combine fuel comsp(l/100km):</label>
-        <input type="text" id="combine" name="combine">
+        <input type="text" id="combine" name="consump">
     </span>
   </div>
-    <h1><input type="submit" value="Submit"></h1>
-    {% if result is none %}
+    <h1><input type="submit" value="Submit"></input></h1>
+      {% if result %}
+  <div class="row">
+    <span>
     <h2> Result</h2>
     <p color="black"> Your total carbon emission today is: {{result}}</p>
-    {% endif %}
+    </span>
+  </div>
+  {% endif %}
+
+</form>
   
   
   <link rel="stylesheet" href="static/hello.css">
