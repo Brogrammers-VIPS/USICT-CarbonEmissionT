@@ -136,22 +136,25 @@ for column in columns_to_encode:
     label_encoders[column] = label_encoder
 df,label_encoders
 
+X=df.drop(columns=['Model','CO2 Emissions(g/km)'])
+y=df['CO2 Emissions(g/km)']
 
-from sklearn.preprocessing import LabelEncoder
+X_train, X_test, y_train, y_test = train_test_split(X,y,random_state=2,test_size=0.2)
 
+xgb=XGBRegressor()
+xgb.fit(X_train,y_train)
 
-columns_to_encode = ['Make','Vehicle Class','Transmission','Fuel Type']
-label_encoders = {}
+y_pred=xgb.predict(X_test)
 
-for column in columns_to_encode:
+mse=mean_squared_error(y_test,y_pred)
+r2s=r2_score(y_test,y_pred)
+print("mean squared error : ", mse)
+print("r2 score :", r2s)
 
-    label_encoder = LabelEncoder()
-    df[column] = label_encoder.fit_transform(df[column])
-    label_encoders[column] = label_encoder
-df,label_encoders
+import pickle
 
-
-
+with open('xgb_model_6mse.pkl','wb') as file:
+    pickle.dump(xgb,file)
 
 
 
