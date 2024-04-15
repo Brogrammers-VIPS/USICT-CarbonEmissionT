@@ -26,5 +26,6 @@ Offsetting: At the end of each month, users can choose to offset their emissions
 ### Benefits
 1.Awareness: Increases awareness of one's impact on the environment.
 Actionable Data: Provides data-driven insights to make informed decisions about reducing emissions.
+
 2.Positive Impact: Encourages a sustainable lifestyle and supports global efforts to combat climate change.
 Such a tracker would be a valuable asset for anyone looking to understand and reduce their environmental impact.
