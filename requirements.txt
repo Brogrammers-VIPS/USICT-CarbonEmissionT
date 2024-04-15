@@ -1,0 +1,6 @@
+flask
+geocoder
+xgboost
+pandas
+scikit-learn
+pickle
