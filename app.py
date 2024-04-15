@@ -46,5 +46,9 @@ def input():
     return render_template('input.html', result=emmision)
 
 if __name__=='__main__':
+<<<<<<< HEAD
+    app.run(host='127.0.0.1',port=8080,debug=True)
+=======
     app.run(host="127.0.0.1",port=8080,debug=True)
 
+>>>>>>> 89bb4fbffb05c8425c015d27b48b07e21e4f71c3

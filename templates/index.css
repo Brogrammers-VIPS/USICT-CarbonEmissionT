@@ -54,7 +54,7 @@ nav {
 .grid {
   position: absolute;
   height: 100%;
-  weight: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,7 +229,7 @@ span {
 @media screen and (max-width: 1000px) {
   .title {
     font-size: 4rem;
-    line-height: 
+    line-height: 1
   }
   
   .title > p {
