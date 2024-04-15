@@ -43,7 +43,7 @@ def input():
 
         emmision=dist*emmision_output
 
-    return render_template('imput_output.html', result=emmision)
+    return render_template('input.html', result=emmision)
 
 
 
