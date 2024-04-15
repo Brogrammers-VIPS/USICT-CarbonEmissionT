@@ -26,6 +26,7 @@ def input():
         city = int(request.form.get('city'))
         hwy = int(request.form.get('hwy'))
         comb = int(request.form.get('comb'))
+        cons=int(request.form.get('consump'))
         start = request.form.get('start')
         end= request.form.get('end')
 
@@ -35,7 +36,7 @@ def input():
         trans_en=label_encoders['Transmission'].transform(trans)
         f_type_en=label_encoders['Fuel Type'].transform(f_type)
 
-        input=[[comp_en,v_class_en,eng_size,cyl,trans_en,f_type_en,city,hwy,comb]]
+        input=[[comp_en,v_class_en,eng_size,cyl,trans_en,f_type_en,city,hwy,comb,cons]]
         
         emmision_output=model.predict(input)
         dist=geocoder.distance(start,end)
