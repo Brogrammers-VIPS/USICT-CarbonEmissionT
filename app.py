@@ -16,6 +16,7 @@ def main():
 
 @app.route('/input', methods=['GET', 'POST'])
 def input():
+    emmision=0
     if request.method=='POST':
         comp = request.form.get('Comp_name')
         v_class = request.form.get('v_class')
@@ -43,7 +44,7 @@ def input():
 
         emmision=dist*emmision_output
 
-    return render_template('input.html', result=emmision)
+    return render_template('hello.html', result=emmision)
 
 if __name__=='__main__':
     app.run(host="127.0.0.1",port=8080,debug=True)
