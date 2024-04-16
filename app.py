@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, send_file
+from flask import Flask, render_template, request, redirect, url_for
 import pickle
 import geocoder
 from model import label_encoders
@@ -14,6 +14,10 @@ app=Flask(__name__)
 def main():
     return  render_template('index.html')
 
+@app.route('/redirect-input', methods=['POST'])
+def redirect_input():
+    # Redirect to the /input route
+    return redirect(url_for('input'))
 
 @app.route('/input', methods=['GET', 'POST'])
 def input():
